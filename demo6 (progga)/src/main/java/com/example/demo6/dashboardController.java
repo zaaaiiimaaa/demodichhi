@@ -19,7 +19,8 @@ public class dashboardController {
     private Button userpro;
     @FXML
     private Button about;
-
+    @FXML
+    private Button myprofile;
     @FXML
     void myGardenBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) myGarden.getScene().getWindow();
@@ -28,9 +29,7 @@ public class dashboardController {
         stage.setScene(scene);
     }
     @FXML
-    private Button myprofile;
-    @FXML
-    void myproBtn(MouseEvent event) throws IOException {
+    void myprofileBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) userpro.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("myaccount.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
